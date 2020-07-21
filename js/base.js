@@ -38,3 +38,9 @@ if (reload) {
         location.reload(true);
     };
 }
+
+console.log('here');
+if (navigator.serviceWorker) {
+    console.log('has sw support');
+    navigator.serviceWorker.register('/sw.js');
+}
