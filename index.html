@@ -35,6 +35,9 @@
     </section>
 
 
+    <button onclick="myFetch('google.com')">Google</button>
+    <button onclick="myFetch('youtube.com')">Youtube</button>
+
     <footer>
         <div role="toolbar">
             <ul>
@@ -42,6 +45,12 @@
             </ul>
         </div>
     </footer>
+
+    <script>
+        function myFetch(url) {
+            fetch(url);
+        }
+    </script>
 
     <script type="text/javascript" src="js/base.js"></script>
     <script type="text/javascript" src="js/webapp.js"></script>
