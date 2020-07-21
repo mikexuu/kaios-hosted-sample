@@ -42,5 +42,5 @@ if (reload) {
 console.log('here');
 if (navigator.serviceWorker) {
     console.log('has sw support');
-    navigator.serviceWorker.register('/sw.js');
+    navigator.serviceWorker.register('/kaios-hosted-sample/sw.js');
 }
