@@ -8,4 +8,8 @@ self.addEventListener('activate', (evt) => {
   self.clients.claim();
 });
 
+self.addEventListener('fetch', (evt) => {
+  console.log('[ServiceWorker] Fetch', evt.request.url);
+});
+
 console.log('inside SW');

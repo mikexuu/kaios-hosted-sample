@@ -13,14 +13,14 @@
     "120": "/kaios-hosted-sample/images/logo120.png",
     "128": "/kaios-hosted-sample/images/logo128.png"
   },
-  "developer": {
-    "name": "Robert Nyman",
-    "url": "http://robertnyman.com"
-  },
   "installs_allowed_from": [
     "*"
   ],
   "default_locale": "en",
-  "permissions": {},
+  "permissions": {
+    "serviceworker": {
+      "description": "Required for service workers."
+    }
+  },
   "cursor": true
 }
